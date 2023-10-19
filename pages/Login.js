@@ -9,13 +9,13 @@ export default function Login({ navigation }) {
     const { userExists } = useContext(UserContext);
 
     const [error, setError] = useState(false);
-    const onHandleLogin = () => {
+    const onHandleLogin = async () => {
         const user = {
             email: email,
             password: password
         }
 
-        if(userExists(user))
+        if(await userExists(user))
             navigation.navigate("home");
         else
             setError(true);

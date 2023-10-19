@@ -13,9 +13,10 @@ export default function App() {
       <NavigationContainer>
         <UserProvider>
           <Stack.Navigator>
+          <Stack.Screen options={{headerStyle: { backgroundColor: '#111' }, headerTintColor: '#fff'}} name="home" component={Home} />
             <Stack.Screen options={{headerShown: false}} name="login" component={Login} />
             <Stack.Screen options={{headerShown: false}} name="cadastro" component={Cadastro} />
-            <Stack.Screen name="home" component={Home} />
+            
           </Stack.Navigator>
         </UserProvider>
       </NavigationContainer>

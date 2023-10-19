@@ -13,9 +13,9 @@ export default function Cadastro({ navigation }) {
 
     const onHandleAddUser = async () => {
         const user = {
-            nome: nome,
-            idade: idade,
-            sexo: sexo,
+            name: nome,
+            age: idade,
+            genre: sexo,
             password: password,
             email: email
         }
